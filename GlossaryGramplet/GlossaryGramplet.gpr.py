@@ -1,7 +1,8 @@
 #
 # Gramps - a GTK+/GNOME based genealogy program
 #
-# Copyright (C) 2020      Dave Scheipers
+# Copyright (C) 2021      Dave Scheipers
+# Copyright (C) 2021      Brian McCullough
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -27,8 +28,8 @@ register(GRAMPLET,
     gramps_target_version = "5.1",
     status = STABLE,
     fname = 'GlossaryGramplet.py',
-    authors = ["Dave Scheipers"],
-    authors_email = ["dave.scheipers@gmail.com"],
+    authors = ["Dave Scheipers, Brian McCullough"],
+    authors_email = ["dave.scheipers@gmail.com, emyoulation@yahoo.com"],
     gramplet = 'GlossaryGramplet',
     gramplet_title = _("Gramps Glossary"),
     height = 500,
