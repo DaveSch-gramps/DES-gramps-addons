@@ -19,8 +19,8 @@
     -GtkMenu-horizontal-padding: 0;
     -GtkMenu-vertical-padding: 0;
     -GtkPaned-handle-size: 4;
-    -GtkProgressBar-min-horizontal-bar-height: 15;
-    -GtkProgressBar-min-vertical-bar-width: 15;
+    -GtkProgressBar-min-horizontal-bar-height: 12;
+    -GtkProgressBar-min-vertical-bar-width: 12;
     -GtkRange-slider-width: 14;
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-border: 0;
@@ -1862,7 +1862,7 @@ GtkLevelBar.vertical {
     -GtkScrollbar-has-backward-stepper: 1;
     -GtkScrollbar-has-forward-stepper: 1;
     -GtkRange-stepper-size: 12;
-    -GtkRange-slider-width: 12;
+    -GtkRange-slider-width: 8;
     -GtkScrollbar-min-slider-length: 36;
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-under-steppers: 1;
@@ -2378,7 +2378,7 @@ GtkSwitch.slider {
     background: linear-gradient(to bottom, rgba(252,252,252,1) 0%,
                                            rgba(235,235,235,1) 50%,
                                            rgba(221,221,221,1) 51%,
-                                           rgba(174,174,174,1) 100%); 
+                                           rgba(174,174,174,1) 100%);
 }
 /************
  * textview *
