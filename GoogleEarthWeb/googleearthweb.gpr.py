@@ -26,7 +26,7 @@ register(
     id="GoogleEarthWeb",
     name=_("Google Earth Web"),
     description=_("Open on maps.earth.google.com"),
-    version="1.0",
+    version="1.0.1",
     gramps_target_version="5.2",
     status=STABLE,
     fname="googleearthweb.py",
@@ -34,4 +34,3 @@ register(
     authors_email=["dave.scheipers@gmail.com"],
     mapservice="GoogleEarthWeb",
 )
-
