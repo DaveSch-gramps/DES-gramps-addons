@@ -2,4 +2,6 @@
 
 Some addons that may not be ready for prime time!
 
-Currently set for Gramps 5.2.
+Set to work with any major_version
+
+Citations only work with Gramps 5.2 or higher.

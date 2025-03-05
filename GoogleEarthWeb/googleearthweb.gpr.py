@@ -18,6 +18,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
 from gramps.gen.const import GRAMPS_LOCALE as glocale
+from gramps.version import major_version
 
 _ = glocale.translation.gettext
 
@@ -27,7 +28,7 @@ register(
     name=_("Google Earth Web"),
     description=_("Open on maps.earth.google.com"),
     version="1.0",
-    gramps_target_version="5.2",
+    gramps_target_version = major_version,
     status=STABLE,
     fname="googleearthweb.py",
     authors=["Dave Scheipers"],

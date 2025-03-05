@@ -18,10 +18,10 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
 from gramps.gen.const import GRAMPS_LOCALE as glocale
+from gramps.version import major_version
 
 _ = glocale.translation.gettext
 
-MODULE_VERSION = "5.2"
 
 # ------------------------------------------------------------------------
 #
@@ -31,36 +31,61 @@ MODULE_VERSION = "5.2"
 
 register(
     CITE,
-    id="cite-AATP",
-    name=_('Abbreviation: Author, "Title", Publisher | Page - Date [Confidence]'),
-    description=_("Default citation formatter"),
+    id="cite-ATPA-PDC",
+    name=_('DES1: Author, "Title", Publisher [Abbreviation] | Page : Date [Confidence]'),
+    description=_('User citation formatter: Author, "Title", Publisher [Abbreviation] | Page : Date [Confidence]'),
     version="1.0",
-    gramps_target_version=MODULE_VERSION,
+    gramps_target_version = major_version,
     status=STABLE,
-    fname="Citation-AATP.py",
+    fname="Citation-ATPA-PDC.py",
     authors=["Dave Scheipers"],
 )
 
 register(
     CITE,
-    id="cite-ATPA",
-    name=_('Author, "Title", Publisher; [Abbreviation] | Page - Date [Confidence]'),
-    description=_("Default citation formatter"),
+    id="cite-ATP-PDC",
+    name=_('DES2: Author, "Title", Publisher | Page : Date [Confidence]'),
+    description=_('User citation formatter: Author, "Title", Publisher | Page : Date [Confidence]'),
     version="1.0",
-    gramps_target_version=MODULE_VERSION,
+    gramps_target_version = major_version,
     status=STABLE,
-    fname="Citation-ATPA.py",
+    fname="Citation-ATP-PDC.py",
     authors=["Dave Scheipers"],
 )
 
 register(
     CITE,
-    id="cite-TAPA",
-    name=_("Title, Author, Publisher; [Abbreviation] | Page - Date [Confidence]"),
-    description=_("Default citation formatter"),
+    id="cite-ATP-DPC",
+    name=_('DES3: Author, "Title", Publisher | Date : Page [Confidence]'),
+    description=_('User citation formatter: Author, "Title", Publisher | Date : Page [Confidence]'),
     version="1.0",
-    gramps_target_version=MODULE_VERSION,
+    gramps_target_version = major_version,
     status=STABLE,
-    fname="Citation-TAPA.py",
+    fname="Citation-ATP-DPC.py",
     authors=["Dave Scheipers"],
 )
+
+register(
+    CITE,
+    id="cite-AATP-PDC",
+    name=_('DES4: Abbreviation: Author, "Title", Publisher | Page : Date [Confidence]'),
+    description=_('User citation formatter: Abbreviation: Author, "Title", Publisher | Page : Date [Confidence]'),
+    version="1.0",
+    gramps_target_version = major_version,
+    status=STABLE,
+    fname="Citation-AATP-PDC.py",
+    authors=["Dave Scheipers"],
+)
+
+register(
+    CITE,
+    id="cite-TAPA-PDC",
+    name=_("DES5: Title, Author, Publisher [Abbreviation] | Page : Date [Confidence]"),
+    description=_("User citation formatter: Title, Author, Publisher [Abbreviation] | Page : Date [Confidence]"),
+    version="1.0",
+    gramps_target_version = major_version,
+    status=STABLE,
+    fname="Citation-TAPA-PDC.py",
+    authors=["Dave Scheipers"],
+)
+
