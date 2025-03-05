@@ -2,4 +2,6 @@
 
 Some addons that may not be ready for prime time!
 
-Currently set for Gramps 5.2.
+Addons reworked to use the major_version setting for target setting.
+
+Citations were introduced in Gramps 5.2
