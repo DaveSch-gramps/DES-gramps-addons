@@ -99,7 +99,7 @@ def _format_source_text(source, elocale):
     if source.get_abbreviation():
         if src_txt:
             # Translators: needed for Arabic, ignore otherwise
-            src_txt += trans_text("; ")
+            src_txt += trans_text(" ")
         src_txt += "[%s]" % source.get_abbreviation()
 
     return src_txt
@@ -117,7 +117,7 @@ def _format_ref_text(ref, key, elocale):
         datepresent = True
     if datepresent:
         if ref.get_page():
-            ref_txt = "%s – %s" % (ref.get_page(), elocale.get_date(date))
+            ref_txt = "%s : %s" % (ref.get_page(), elocale.get_date(date))
         else:
             ref_txt = elocale.get_date(date)
     else:
@@ -126,9 +126,9 @@ def _format_ref_text(ref, key, elocale):
     # Print only confidence level if it is not Normal
     if ref.get_confidence_level() != Citation.CONF_NORMAL:
         ref_txt += (
-            " [Confidence: "
+            " ["
             + elocale.translation.gettext(conf_strings[ref.get_confidence_level()])
-            + "]"
+            + " Confidence]"
         )
 
     return ref_txt
