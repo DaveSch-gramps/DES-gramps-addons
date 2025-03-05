@@ -17,6 +17,10 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
+"""
+Gramps registration file
+"""
+from gramps.version import major_version
 
 #------------------------------------------------------------------------
 #
@@ -29,7 +33,7 @@ register(MAPSERVICE,
     name = _("Bing Maps"),
     description = _("Opens on Bing.com/Maps"),
     version = '1.0.1',
-    gramps_target_version="5.2",
+    gramps_target_version = major_version,
     status = STABLE,
     fname = 'BingMapService.py',
     authors = ["Dave Scheipers"],
