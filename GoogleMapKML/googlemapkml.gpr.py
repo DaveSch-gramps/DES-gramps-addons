@@ -1,7 +1,7 @@
 #
 # Gramps - a GTK+/GNOME based genealogy program
 #
-# Copyright (C) 2009       Peter Landgren
+# Copyright (C) 2009 Benny Malengier
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,23 +17,21 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
+from gramps.gen.const import GRAMPS_LOCALE as glocale
 
-# $Id: GoogleEarthWriteKML.py.py 11946 2009-02-13 06:06:14Z ldnp $
+_ = glocale.translation.gettext
 
-#------------------------------------------------------------------------
-#
-# Register map service
-#
-#------------------------------------------------------------------------
-register(MAPSERVICE,
-    id = 'GoogleEarthPro',
-    name = _('Google Earth Pro'),
-    version = '1.0.1',
+register(
+    MAPSERVICE,
+    id="GoogleMapKML",
+    name=_("Google Map KML Outline"),
+    description=_("Open on maps.google.com"),
+    version="1.0",
     gramps_target_version="5.2",
-    status = STABLE,
-    fname = 'GoogleEarthPro.py',
-    description = _("Creates data file for GoogleEarth and opens it"),
-    mapservice = 'GoogleEarthPro',
-    authors=["Peter Landgren"],
-    authors_email=["peter.talken@telia.com"],
-    )
+    status=STABLE,
+    fname="googlemapkml.py",
+    authors=["Dave Scheipers"],
+    authors_email=["dave.scheipers@gmail.com"],
+    mapservice="GoogleMapKML",
+)
+
